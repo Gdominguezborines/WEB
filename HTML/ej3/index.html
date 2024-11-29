@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form method="post">
+        <label for="Nombre">Nombre: </label><input type="text" name="Nombre" required><br/>
+        <label for="Apellidos">Apellidos: </label><input type="text" name="Apellidos" required><br/><br/>
+        <label for="Dirección">Dirección: </label><br/>
+        <label for="Via">Tipo de via </label><input type="text" name="Via" required> 
+        <label for="NombreVia">&nbsp;&nbsp;Nombre de la via </label><input type="text" name="NombreVia" required>
+        <label for="Cp">&nbsp;&nbsp;Cp </label><input type="text" name="Cp" required><br/>
+        <label for="Ciudad">&nbsp;&nbsp;Ciudad </label><input type="text" name="Ciudad" required><br/>
+        <label for="Provincia">Provincia </label><input type="text" name="Provincia" required> <br/>
+        <label for="Pais">Pais </label><input type="text" name="Pais" required><br/>
+        <label for="FechaNacimiento">Fecha de Nacimiento </label><input type="date" name="FechaNacimiento" required><br/>
+        <label for="NotaMedia">Nota Media Universidad </label><input type="number" name="NotaMedia" max="10" pattern="[0-9]" required><br/>
+        <label for="Telefono">Telefono </label><input type="tel" name="Telefono" min="0" max="9" maxlength="9" required><br/>
+        <label for="Correo">Correo </label><input type="email" name="Correo" required><br/>
+        <label for="Pass">Contraseña </label><input type="password" name="Pass" required><br/>
+        <label for="PassR">Repite la contraseña </label><input type="password" name="PassR" required><br/>
+        <label for="SelecionPais">Selecione un pais </label><select name="Paises">
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Andorra">Andorra</option>
+        </select><br/>
+        <label for="Cuenta">Selecione un tipo de cuenta </label><select name="Cuenta" required>
+            <option value="Gratuita" title="Es gratuita corre que se acaban">Gratuita</option>
+            <option value="Básica" title="Nada fuera de lo comun incluye lo basico">Básica</option>
+            <option value="Premiun" title="Todo lo que buscas aqui esta" >Premiun</option>
+        </select><br/>
+        <label for="Descripcion">Breve descripcion: </label><br/><textarea name="Descripcion" rows="4" cols="20" required></textarea><br/>
+        <label for="Foto">Foto de perfil &nbsp;&nbsp;</label><input type="image" name="Foto" required><br/>
+        <label for="CV">Curriculum Vitae &nbsp;&nbsp;</label><input type="file" name="CV" required><br/><br/>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
